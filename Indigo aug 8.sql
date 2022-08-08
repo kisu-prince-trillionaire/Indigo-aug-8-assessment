@@ -77,7 +77,16 @@ c_id int,
 f_id int,
 trans_amount int)
 
-insert
+insert into booking values (8000)
+insert into booking values (8000)
+insert into booking values (8000)
+insert into booking values (8000)
+insert into booking values (8000)
+insert into booking values (8000)
+insert into booking values (8000)
+insert into booking values (8000)
+insert into booking values (8000)
+insert into booking values (8000)
 
 create table booking_log(
 loginid int,
@@ -92,6 +101,9 @@ for insert
 as
 insert into booking_log(b_id,c_id,operation,updateddate)
 select b_id,c_id,'Booking Done',GETDATE() FROM inserrted
+
+insert into booking values (8000)
+insert into booking values (8000)
 
 
 create procedure sp_customerbooking
